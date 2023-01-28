@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <!-- css -->
+    <link rel="stylesheet" href="/style.css" />
+    <!-- script -->
+    <script defer src="/main.js"></script>
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="/images/logo.svg" alt="" class="logo" />
+      <nav>
+        <div class="nav-lists1">
+          <ul>
+            <li class="lits-containers nav-lists ">
+              Features <img src="/images/icon-arrow-down.svg" alt="" class="arrow"/>
+              <ul class="lists feature-list ">
+                <li><a href=""><img src="/images/icon-todo.svg" alt=""> Todo List</li></a>
+                <li><a href=""><img src="/images/icon-calendar.svg" alt=""> Calendar</li></a>
+                <li><a href=""><img src="/images/icon-reminders.svg" alt=""> Reminders</li></a>
+                <li><a href=""><img src="/images/icon-planning.svg" alt=""> Planning</li></a>
+              </ul>
+
+            </li>
+            <li class="lits-containers nav-lists ">
+              Company <img src="/images/icon-arrow-down.svg" alt="" class="arrow"/>
+              <ul class="lists  company-list">
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Blog</li>
+              </ul>
+            </li>
+            <li >Careers </li>
+            <li >About </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="btn-container">
+        <button class="login-btn">Login</button>
+        <button class="btn-style regis-btn">Register</button>
+      </div>
+      <div class="hamburger">
+        <img src="/images/icon-menu.svg" alt="">
+      </div>
+    </header>
+    <main>
+      <div class="containers">
+        <div class="contents">
+          <div class="header">
+            <h1>
+              Make <br />
+              remote work
+            </h1>
+          </div>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button class="btn-style btn-learn">Learn more</button>
+          <div class="clients">
+            <img src="/images/client-databiz.svg" alt="" />
+            <img src="/images/client-audiophile.svg" alt="" />
+            <img src="/images/client-meet.svg" alt="" />
+            <img src="/images/client-maker.svg" alt="" />
+          </div>
+        </div>
+        <div class="image">
+          <!-- <img src="/images/image-hero-desktop.png" alt="" class="img" /> -->
+        </div>
+      </div>
+      
+      
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Matt Ratchapon</a>.
+    </div>
+  </body>
+</html>

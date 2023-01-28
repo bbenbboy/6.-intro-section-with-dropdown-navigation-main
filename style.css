@@ -1,0 +1,234 @@
+:root {
+  --AlmostWhite: hsl(0, 0%, 98%);
+  --MediumGray: hsl(0, 0%, 41%);
+  --AlmostBlack: hsl(0, 0%, 8%);
+}
+* {
+  font-size: 18px;
+  font-family: "Epilogue", sans-serif;
+}
+body {
+  margin: 30px 30px;
+}
+li,
+a,
+button {
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  height: 60px;
+}
+ul {
+  padding: 0;
+}
+.nav-lists1 {
+  cursor: pointer;
+  margin-right: auto;
+}
+.nav-lists1 li:hover {
+  color: var(--AlmostBlack);
+  font-weight: 500;
+  transition: 0.5s;
+}
+.nav-lists1 li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px;
+  color: var(--MediumGray);
+}
+.nav-lists1 img {
+  padding: 3px 10px;
+}
+.logo {
+  margin: 0 30px;
+}
+.hamburger {
+  display: none;
+}
+.btn-container {
+  margin-left: auto;
+}
+.login-btn {
+  background-color: white;
+  border-color: white;
+  border-style: inherit;
+  width: 125px;
+  height: 50px;
+  color: var(--AlmostBlack);
+  cursor: pointer;
+}
+.btn-style {
+  font-family: Arial;
+  width: 125px;
+  height: 50px;
+  border-width: 1px;
+  color: var(--AlmostBlack);
+  border-color: rgba(0, 0, 0, 1);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  background: white;
+  cursor: pointer;
+}
+.lists {
+  list-style: none;
+  color: var(--MediumGray);
+  border-radius: 10px;
+  padding: 5px;
+  -webkit-box-shadow: -1px 1px 19px 20px rgba(0, 0, 0, 0.03);
+  -moz-box-shadow: -1px 1px 19px 20px rgba(0, 0, 0, 0.03);
+  box-shadow: -1px 1px 19px 20px rgba(0, 0, 0, 0.03);
+  position: absolute;
+  width: 180px;
+  visibility: hidden;
+}
+.lists li {
+  margin: 10px 0;
+}
+.lists a {
+  color: inherit;
+}
+.lists img {
+  padding: 0 10px;
+}
+.feature-list {
+  top: 50px;
+  left: 80px;
+}
+.company-list {
+  top: 50px;
+  left: 300px;
+  width: 130px;
+  height: 120px;
+}
+.lits-containers.active .lists {
+  visibility: visible;
+}
+.lits-containers.active .arrow {
+  transform: rotate(180deg);
+}
+.arrow {
+  transition: 0.3s ease-in;
+}
+/* Container */
+.containers {
+  display: grid;
+  grid-template-columns: repeat(2, 0.5fr);
+  grid-template-rows: 800px;
+  margin: 80px 80px;
+  gap: 50px;
+  justify-content: center;
+  grid-template-areas: "contents image";
+}
+.contents {
+  margin: 50px 50px 0px 50px;
+  justify-content: center;
+}
+.contents h1 {
+  font-size: 4rem;
+  margin-bottom: 60px;
+}
+.contents p {
+  color: var(--MediumGray);
+  width: 83%;
+  line-height: 23.9px;
+}
+.image {
+  background-image: url(/images/image-hero-desktop.png);
+  text-align: center;
+  background-size: cover;
+}
+
+.btn-learn {
+  margin: 50px 0;
+  width: 200px;
+  height: 60px;
+  font-weight: 700;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+}
+.btn-learn:hover {
+  color: black;
+  background-color: white;
+  transition: 0.5s;
+}
+.clients {
+  display: flex;
+  justify-content: space-between;
+  height: 25px;
+  margin-top: 40%;
+}
+.clients img {
+  padding: 0 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-lists1,
+  .btn-container {
+    display: none;
+  }
+
+  .hamburger {
+    display: inherit;
+    margin-left: auto;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+  }
+  .logo {
+    margin: 0;
+  }
+  .containers {
+    grid-template-columns: 1fr;
+    grid-template-rows: 340px auto;
+    grid-template-areas:
+      "image"
+      "contents";
+    margin: 0;
+  }
+  .image {
+    grid-area: image;
+  }
+  .contents {
+    grid-area: contents;
+  }
+  .image {
+    background-image: url(/images/image-hero-mobile.png);
+    text-align: center;
+    background-size: 560px;
+    background-repeat: no-repeat;
+    height: 430px;
+  }
+  .contents {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .contents h1 br {
+    display: none;
+  }
+  .contents h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+  }
+  .contents p {
+    width: 100%;
+    margin-top: 30px;
+    line-height: 25px;
+  }
+  .btn-learn {
+    margin: 30px 0;
+  }
+  .clients {
+    margin-top: 10%;
+  }
+}
